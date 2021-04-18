@@ -1,6 +1,6 @@
-package TP04;
+package controle;
 
-public class Cozinhar {
+public class Volume {
 	private double valorOrigem;
 	public double getValorOrigem() {
 		return valorOrigem;
@@ -9,8 +9,9 @@ public class Cozinhar {
 		this.valorOrigem = valorOrigem;
 	}
 	public void converter(double i) {
-		System.out.println(i + " ml");
-		System.out.println(i / 5 + " colher(es) de chá");
-		System.out.println(i / 15 + " colher(es) de sopa");
+		System.out.println(i + " m³");
+		System.out.println(i * 1000000 + " cm³");
+		System.out.println(i + " L");
+		System.out.println(i * 1000 + " mL");
 	}
 }

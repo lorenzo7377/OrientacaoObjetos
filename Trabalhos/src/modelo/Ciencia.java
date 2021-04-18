@@ -1,8 +1,10 @@
-package TP04;
+package modelo;
+
+import controle.Concentracao;
+import controle.Densidade;
+import controle.Grupo;
 
 public class Ciencia extends Grupo{
-	private Grupo Concentracao;
-	private Grupo Densidade;
 	private Concentracao c = new Concentracao();
 	private Densidade d = new Densidade();
 	public double getValorOrigem() {

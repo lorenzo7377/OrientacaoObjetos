@@ -1,6 +1,6 @@
-package TP04;
+package controle;
 
-public class Concentracao {
+public class Cozinhar {
 	private double valorOrigem;
 	public double getValorOrigem() {
 		return valorOrigem;
@@ -9,8 +9,8 @@ public class Concentracao {
 		this.valorOrigem = valorOrigem;
 	}
 	public void converter(double i) {
-		System.out.println(i + " g/l");
-		System.out.println(i / 10 + "%");
-		System.out.println(i / 1000 + " mg/l");
+		System.out.println(i + " ml");
+		System.out.println(i / 5 + " colher(es) de chá");
+		System.out.println(i / 15 + " colher(es) de sopa");
 	}
 }

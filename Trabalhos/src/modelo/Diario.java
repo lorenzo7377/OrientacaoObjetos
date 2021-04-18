@@ -1,10 +1,12 @@
-package TP04;
+package modelo;
+
+import controle.Grupo;
+import controle.Moeda;
+import controle.Temperatura;
+import controle.Tempo;
+import controle.Velocidade;
 
 public class Diario extends Grupo{
-	private Grupo Tempo;
-	private Grupo Temperatura;
-	private Grupo Velocidade;
-	private Grupo Moeda;
 	private Tempo tempo = new Tempo();
 	private Temperatura temp = new Temperatura();
 	private Velocidade vel = new Velocidade();

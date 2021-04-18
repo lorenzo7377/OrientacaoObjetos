@@ -1,4 +1,4 @@
-package TP04;
+package modelo;
 
 import java.util.*;
 
@@ -11,6 +11,7 @@ public class Main {
 
 
 	public static void main(String[] args) {
+		
 		basico = new Basico(1);
 		basico.escolha(4);
 		ciencia = new Ciencia(100);
