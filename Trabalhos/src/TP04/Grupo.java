@@ -1,10 +1,10 @@
-package TP03;
+package TP04;
 
 public abstract class Grupo {
 	
 	protected double valorOrigem;
 	
-	protected String medidaOrigem;
+	
 
 	public double getValorOrigem() {
 		return valorOrigem;
@@ -14,11 +14,7 @@ public abstract class Grupo {
 		this.valorOrigem = valorOrigem;
 	}
 
-	public String getMedidaOrigem() {
-		return medidaOrigem;
-	}
-
-	public void setMedidaOrigem(String medidaOrigem) {
-		this.medidaOrigem = medidaOrigem;
+	public void converter(double i) {
+		
 	}
 }
