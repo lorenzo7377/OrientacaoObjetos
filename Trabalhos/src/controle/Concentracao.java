@@ -1,6 +1,6 @@
-package TP04;
+package controle;
 
-public class Volume {
+public class Concentracao {
 	private double valorOrigem;
 	public double getValorOrigem() {
 		return valorOrigem;
@@ -9,9 +9,8 @@ public class Volume {
 		this.valorOrigem = valorOrigem;
 	}
 	public void converter(double i) {
-		System.out.println(i + " m³");
-		System.out.println(i * 1000000 + " cm³");
-		System.out.println(i + " L");
-		System.out.println(i * 1000 + " mL");
+		System.out.println(i + " g/l");
+		System.out.println(i / 10 + "%");
+		System.out.println(i / 1000 + " mg/l");
 	}
 }

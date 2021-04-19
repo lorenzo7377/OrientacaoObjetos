@@ -1,4 +1,4 @@
-package TP04;
+package controle;
 
 public class Area {
 	private double valorOrigem;

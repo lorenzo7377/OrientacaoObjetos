@@ -1,10 +1,12 @@
-package TP04;
+package modelo;
+
+import controle.Area;
+import controle.Comprimento;
+import controle.Grupo;
+import controle.Peso;
+import controle.Volume;
 
 public class Basico extends Grupo{
-	private Grupo Volume;
-	private Grupo Area;
-	private Grupo Comprimento;
-	private Grupo Peso;
 	private Comprimento c = new Comprimento();
 	private Area a = new Area();
 	private Volume v = new Volume();

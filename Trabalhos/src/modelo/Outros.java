@@ -1,8 +1,10 @@
-package TP04;
+package modelo;
+
+import controle.Combustivel;
+import controle.Cozinhar;
+import controle.Grupo;
 
 public class Outros extends Grupo{
-	private Grupo Combustivel;
-	private Grupo Cozinhar;
 	private Cozinhar coz = new Cozinhar();
 	private Combustivel comb = new Combustivel ();
 	public double getValorOrigem() {
