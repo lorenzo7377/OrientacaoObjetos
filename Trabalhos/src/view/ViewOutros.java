@@ -42,9 +42,9 @@ public class ViewOutros implements ActionListener{
 			Object src = e.getSource();
 			
 			if(src == botao1)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(4,1);
 			if(src == botao2)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(4,2);
 			if(src == botao3)
 				new ViewMenu();
 			}

@@ -2,19 +2,16 @@ package controle;
 
 public abstract class Grupo {
 	
-	protected double valorOrigem;
+	protected static int valorOrigem;
 	
 	
 
-	public double getValorOrigem() {
+	public int getValorOrigem() {
 		return valorOrigem;
 	}
 
-	public void setValorOrigem(double valorOrigem) {
-		this.valorOrigem = valorOrigem;
+	public static void setValorOrigem(int valorOrigem) {
+		Grupo.valorOrigem = valorOrigem;
 	}
 
-	public void converter(double i) {
-		
-	}
 }
