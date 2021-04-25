@@ -10,8 +10,8 @@ import modelo.Velocidade;
 public class Diario extends Grupo{
 	private double valor;
 	
-	public Diario(int d){
-		valor = (double) d;
+	public Diario(double valor2){
+		valor = valor2;
 	}
 	
 	public String[] ListarTempo() {

@@ -8,8 +8,8 @@ import modelo.Volume;
 public class Basico extends Grupo{
 	private double valor;
 	
-	public Basico(int d){
-		valor = (double) d;
+	public Basico(double valor2){
+		valor = valor2;
 	}
 	
 	public String[] ListarComp() {

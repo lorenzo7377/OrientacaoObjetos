@@ -7,8 +7,8 @@ import modelo.Cozinhar;
 public class Outros extends Grupo{
 	private double valor;
 
-	public Outros(int d){
-		valor = (double) d;
+	public Outros(double valor2){
+		valor = valor2;
 	}
 	
 	public String[] ListarCombustivel() {
