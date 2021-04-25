@@ -6,8 +6,8 @@ import modelo.Densidade;
 public class Ciencia extends Grupo{
 	private double valor;
 	
-	public Ciencia(int d){
-		valor = (double) d;
+	public Ciencia(double valor2){
+		valor = valor2;
 	}
 	
 	public String[] ListarConcentracao() {

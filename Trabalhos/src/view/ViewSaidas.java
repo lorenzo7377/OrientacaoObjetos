@@ -21,7 +21,7 @@ public class ViewSaidas{
 	private JList<String> lva11;
 	private JList<String> lva12;
 	
-	public void mostrar(int valor, int d1, int d2) {
+	public void mostrar(double valor, int d1, int d2) {
 		f.setLayout(null);
 		f.setSize(500, 400);
 		f.setResizable(false);
