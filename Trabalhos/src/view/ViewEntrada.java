@@ -10,6 +10,7 @@ public class ViewEntrada implements ActionListener{
 	private static JButton botao2 = new JButton("Voltar");
 	private static JTextField caixa = new JTextField(20);
 	private static JPanel painel = new JPanel();
+	int marcador1, marcador2, valor;
 	
 	private static void colocar(JPanel panel) {
 
@@ -37,6 +38,8 @@ public class ViewEntrada implements ActionListener{
 
 		frame.add(painel);
 		colocar(painel);
+		marcador1 = i;
+		marcador2 = d;
 
 		frame.setVisible(true);
 		botao.addActionListener(this);
@@ -44,8 +47,10 @@ public class ViewEntrada implements ActionListener{
 	}
 	public void actionPerformed(ActionEvent e) {
 		Object src = e.getSource();
-		if(src == botao)
-		System.out.println("1");
+		if(src == botao) {
+		valor = Integer.parseInt(caixa.getText());
+		new ViewSaidas().mostrar(valor, marcador1, marcador2);
+		}
 		if(src == botao2)
 			new ViewMenu();
 		}

@@ -6,8 +6,8 @@ import javax.swing.*;
 
 public class ViewBasico implements ActionListener{
 	private static JButton botao1 = new JButton("Comprimento");
-	private static JButton botao2 = new JButton("Peso");
-	private static JButton botao3 = new JButton("Área");
+	private static JButton botao2 = new JButton("Área");
+	private static JButton botao3 = new JButton("Peso");
 	private static JButton botao4 = new JButton("Volume");
 	private static JButton botao5 = new JButton("Voltar");
 	private static JFrame f=new JFrame("Conversor de medidas");
@@ -52,11 +52,11 @@ public class ViewBasico implements ActionListener{
 			if(src == botao1)
 				new ViewEntrada().RecebeValor(1,1);
 			if(src == botao2)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(1,2);
 			if(src == botao3)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(1,3);
 			if(src == botao4)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(1,4);
 			if(src == botao5)
 				new ViewMenu();
 			}

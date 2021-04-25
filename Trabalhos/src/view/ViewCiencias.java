@@ -42,9 +42,9 @@ public class ViewCiencias implements ActionListener{
 			Object src = e.getSource();
 			
 			if(src == botao1)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(3,1);
 			if(src == botao2)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(3,2);
 			if(src == botao3)
 				new ViewMenu();
 			}

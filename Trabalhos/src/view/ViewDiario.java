@@ -51,13 +51,13 @@ public class ViewDiario  implements ActionListener{
 			Object src = e.getSource();
 			
 			if(src == botao1)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(2,1);
 			if(src == botao2)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(2,2);
 			if(src == botao3)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(2,3);
 			if(src == botao4)
-				new ViewEntrada().RecebeValor(1,1);
+				new ViewEntrada().RecebeValor(2,4);
 			if(src == botao5)
 				new ViewMenu();
 			}
