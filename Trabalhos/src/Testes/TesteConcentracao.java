@@ -21,7 +21,7 @@ class TesteConcentracao {;
 
 	@Test
 	void testConverter3() {
-		assertEquals(0.01,Concentracao.converter3(1));
+		assertEquals(0.001,Concentracao.converter3(1));
 	}
 
 
