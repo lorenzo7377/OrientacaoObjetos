@@ -7,19 +7,11 @@ package modelo;
 
 public class Combustivel {
 	
-	/** Representa o valor que o usuário inseriu em quilômetros por litros
-	 * @param i valor inteiro inserido pelo usuário
-	 * @return o mesmo valor entrado, ou seja, a variável i
-	 */
-	public static double converter1(double i) {
-		return i;
-	}
-	
 	/** Representa o valor que o usuário inseriu em metros por litros
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em metros por litros
 	 */
-	public static double converter2(double i) {
+	public static double converter1(double i) {
 		return i * 0.6213;
 	}
 	
@@ -27,7 +19,7 @@ public class Combustivel {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em litros a cada cem quilômetros
 	 */
-	public static double converter3(double i) {
+	public static double converter2(double i) {
 		return i * 100;
 	}
 

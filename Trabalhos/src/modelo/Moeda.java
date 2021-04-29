@@ -7,20 +7,11 @@ package modelo;
 
 public class Moeda {
 	
-	/** Representa o valor que o usuário inseriu em reais
-	 * @param i valor inteiro inserido pelo usuário
-	 * @return o mesmo valor entrado, ou seja, a variável i
-	 */
-	public static double converter1(double i) {
-		return i;
-	}
-	
 	/** Representa o valor que o usuário inseriu em dólares
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em dólar
 	 */
-	public static double converter2(double i) {
-		//dólar
+	public static double converter1(double i) {
 		return i * 0.18;
 	}
 	
@@ -28,8 +19,7 @@ public class Moeda {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em libras esterlinas
 	 */
-	public static double converter3(double i) {
-		//Libra esterlina
+	public static double converter2(double i) {
 		return i * 0.13;
 	}
 	
@@ -37,8 +27,7 @@ public class Moeda {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em euros
 	 */
-	public static double converter4(double i) {
-		//Euro
+	public static double converter3(double i) {
 		return i * 0.15;
 	}
 	

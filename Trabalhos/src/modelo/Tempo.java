@@ -7,19 +7,11 @@ package modelo;
 
 public class Tempo {
 	
-	/** Representa o valor que o usuário inseriu em segundos
-	 * @param i valor inteiro inserido pelo usuário
-	 * @return o mesmo valor entrado, ou seja, a variável i
-	 */
-	public static double converter1(double i) {
-		return i;
-	}
-	
 	/** Representa o valor que o usuário inseriu em milisegundos
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em milisegundos
 	 */
-	public static double converter2(double i) {
+	public static double converter1(double i) {
 		return i * 1000;
 	}
 	
@@ -27,7 +19,7 @@ public class Tempo {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em minutos
 	 */
-	public static double converter3(double i) {
+	public static double converter2(double i) {
 		return i / 60 ;
 	}
 	
@@ -35,7 +27,7 @@ public class Tempo {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em horas
 	 */
-	public static double converter4(double i) {
+	public static double converter3(double i) {
 		return i / 3600 ;
 	}
 	
@@ -43,7 +35,7 @@ public class Tempo {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return uma string que contem o parâmetro inserido no modelo hh:mm:ss
 	 */
-	public static String converter5(double i) {
+	public static String converter4(double i) {
 		int h, m, s;
 		h =(int) i / 3600;
 		m = (int) (i % 3600) / 60;

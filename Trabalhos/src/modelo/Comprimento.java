@@ -6,20 +6,12 @@ package modelo;
  */
 
 public class Comprimento {
-	
-	/** Representa o valor que o usuário inseriu em metros
-	 * @param i valor inteiro inserido pelo usuário
-	 * @return o mesmo valor entrado, ou seja, a variável i
-	 */
-	public static double converter1(double i) {
-		return i;
-	}
-	
+
 	/** Representa o valor que o usuário inseriu em centímetros
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em centímetros
 	 */
-	public static double converter2(double i) {
+	public static double converter1(double i) {
 		return i * 100;
 	}
 	
@@ -27,7 +19,7 @@ public class Comprimento {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em milímetros
 	 */
-	public static double converter3(double i) {
+	public static double converter2(double i) {
 		return i * 1000 ;
 	}
 	
@@ -35,7 +27,7 @@ public class Comprimento {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em quilômetros
 	 */
-	public static double converter4(double i) {
+	public static double converter3(double i) {
 		return i / 1000 ;
 	}
 	
@@ -43,7 +35,7 @@ public class Comprimento {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em pés
 	 */
-	public static double converter5(double i) {
+	public static double converter4(double i) {
 		return (i * 3.281) ;
 	}
 	
@@ -51,7 +43,7 @@ public class Comprimento {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em polegadas
 	 */
-	public static double converter6(double i) {
+	public static double converter5(double i) {
 		return (i * 39.37) ;
 	}
 	
@@ -59,8 +51,7 @@ public class Comprimento {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em milhas
 	 */
-	public static double converter7(double i) {
-			return (i / 1609) ;
-	
+	public static double converter6(double i) {
+		return (i / 1609) ;
 	}
 }

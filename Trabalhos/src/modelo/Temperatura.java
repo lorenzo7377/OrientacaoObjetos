@@ -7,19 +7,11 @@ package modelo;
 
 public class Temperatura {
 	
-	/** Representa o valor que o usuário inseriu em celsius
-	 * @param i valor inteiro inserido pelo usuário
-	 * @return o mesmo valor entrado, ou seja, a variável i
-	 */
-	public static double converter1(double i) {
-		return i;
-	}
-	
 	/** Representa o valor que o usuário inseriu em fahrenheits
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em fahrenheit
 	 */
-	public static double converter2(double i) {
+	public static double converter1(double i) {
 		return (i * 9 / 5)+ 32;
 	}
 	
@@ -27,7 +19,7 @@ public class Temperatura {
 	 * @param i valor inteiro inserido pelo usuário
 	 * @return o parâmetro inserido transformado em kelvin
 	 */
-	public static double converter3(double i) {
+	public static double converter2(double i) {
 		return i + 273;
 	}
 }
