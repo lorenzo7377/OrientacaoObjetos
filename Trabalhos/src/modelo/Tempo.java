@@ -1,6 +1,6 @@
 package modelo;
 
-/** Realiza as transformações da medida padrão(segundos) para as medidas esperadas
+/** Realiza as transformações da medida padrão (segundos) para as medidas esperadas
  * @author Lorenzo Santos
  * @version 2.0 (Apr 2021)
  */

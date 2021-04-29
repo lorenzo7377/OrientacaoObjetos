@@ -4,6 +4,11 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+/**Gera a interface gráfica da categoria "Outros" e cria os botões de seleção das categorias "Combustível", "Cozinha", e "Voltar"
+ * @author Lorenzo Santos
+ *@version 1.1 (Apr 2021)
+ */
+
 public class ViewOutros implements ActionListener{
 	private static JButton botao1 = new JButton("Combustível");
 	private static JButton botao2 = new JButton("Cozinha");
@@ -12,6 +17,8 @@ public class ViewOutros implements ActionListener{
 	private static JLabel titulo = new JLabel("Outros");
 	private static JLabel subtext = new JLabel("Escolha uma das categorias abaixo");
 	
+	/** Cria o layout da aba de categoria e posiciona o texto e os botões clicáveis, além de registrar o clique do usuário em um botão
+	 */
 	public void apresentar(){
 		int x = 150;
 		int y = 60;
@@ -38,15 +45,18 @@ public class ViewOutros implements ActionListener{
 		botao3.addActionListener(this);
 		
 	}
-		public void actionPerformed(ActionEvent e) {
-			Object src = e.getSource();
-			
-			if(src == botao1)
-				new ViewEntrada().RecebeValor(4,1);
-			if(src == botao2)
-				new ViewEntrada().RecebeValor(4,2);
-			if(src == botao3)
-				new ViewMenu();
-			}
-
+	
+	/**Chama as próximas interfaces quando um dos botões é clicado
+	 * @param e Variável que indica qual botão foi clicado pelo usuário
+	 */
+	public void actionPerformed(ActionEvent e) {
+		Object src = e.getSource();
+		
+		if(src == botao1)
+			new ViewEntrada().RecebeValor(4,1);
+		if(src == botao2)
+			new ViewEntrada().RecebeValor(4,2);
+		if(src == botao3)
+			new ViewMenu();
+		}
 }
