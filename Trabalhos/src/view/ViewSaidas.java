@@ -5,8 +5,12 @@ import javax.swing.*;
 
 import controle.*;
 
+/**Cria a interface gráfica final contendo os resultados das conversões
+ * @author Lorenzo Santos
+ * @version 1.0 (Apr 2021)
+ */
+
 public class ViewSaidas{
-	//private static JButton botao = new JButton("Voltar");
 	private static JFrame f = new JFrame("medidas convertidas");
 	private JList<String> lva1;
 	private JList<String> lva2;
@@ -21,18 +25,22 @@ public class ViewSaidas{
 	private JList<String> lva11;
 	private JList<String> lva12;
 	
+	/**Cria o layout da aba de visualização e apresenta os resultados em forma de Jlists
+	 * @param valor inserido pelo usuário a ser convertido
+	 * @param d1 variável que representa a categoria (1-Básico, 2-Diário, 3-Ciências, 4-Outros)
+	 * @param d2 variável que representa qual grupo de conversões de ser chamado (classes do pacote Modelo)
+	 */
 	public void mostrar(double valor, int d1, int d2) {
 		f.setLayout(null);
 		f.setSize(500, 400);
 		f.setResizable(false);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		
 		JLabel intro = new JLabel("As medias correspondentes serão:");
 		intro.setFont(new Font("Times new Roman", Font.ITALIC, 16));
 		intro.setBounds(110, 10, 300, 100);
 		f.add(intro);
 		f.setVisible(true);
+		
 		if(d1 == 1) {
 			switch(d2){
 			case 1:
@@ -72,7 +80,6 @@ public class ViewSaidas{
 				f.add(lva4);
 				break;
 			}
-			
 		}
 		if(d1 == 2) {
 			switch(d2){
@@ -134,8 +141,7 @@ public class ViewSaidas{
 				lva10.setFont(new Font("Arial",Font.BOLD,14));
 				f.add(lva10);
 				break;
-			}
-			
+			}	
 		}
 		if(d1 == 4) {
 			switch(d2){
@@ -158,10 +164,6 @@ public class ViewSaidas{
 				f.add(lva12);
 				break;
 			}
-		}
-
-		
-		
+		}	
 	}
-	
 }

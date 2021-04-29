@@ -1,16 +1,26 @@
 package modelo;
 
+/** Realiza as transformações da medida padrão (grama por centímetro cúbico) para as medidas esperadas
+ * @author Lorenzo Santos
+ * @version 2.0 (Apr 2021)
+ */
+
+
 public class Densidade {
+	
+	/** Representa o valor que o usuário inseriu em quilôgramas por metros cúbicos
+	 * @param i valor inteiro inserido pelo usuário
+	 * @return o parâmetro inserido transformado em quilôgramas por metros cúbicos
+	 */
 	public static double converter1(double i) {
-		//gramas por centímetro cúbico
-		return i;
-	}
-	public static double converter2(double i) {
-		//quilôgramas por metros cúbicos
 		return i / 1000;
 	}
-	public static double converter3(double i) {
-		//libras por polegada cúbica
+	
+	/** Representa o valor que o usuário inseriu em libras por polegada cúbica
+	 * @param i valor inteiro inserido pelo usuário
+	 * @return o parâmetro inserido transformado em libras por polegada cúbica
+	 */
+	public static double converter2(double i) {
 		return i / 27.68;
 	}
 }
